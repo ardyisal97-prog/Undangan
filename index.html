@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#f7f2e9">
+  <title>Undangan Pernikahan | Paisal & Ajeng</title>
+  <meta name="description" content="Undangan pernikahan Paisal Ardiansah dan Ajeng Regita Mutiara Nandayani, 10 Februari 2027.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <style>
+    :root{--cream:#f8f4ec;--paper:#fffdf8;--gold:#a78345;--gold-dark:#82632e;--ink:#34312c;--muted:#777168;--line:#e7dcc8}
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{margin:0;background:var(--cream);color:var(--ink);font-family:Poppins,Arial,sans-serif;font-size:14px;line-height:1.8}
+    a{color:inherit}
+    .topbar{position:sticky;top:0;z-index:10;background:#fffdf8ed;backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+    .nav{max-width:1100px;margin:auto;padding:12px 20px;display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .brand,.script{font-family:"Cormorant Garamond",Georgia,serif;font-style:italic;color:var(--gold-dark)}
+    .brand{font-size:27px;white-space:nowrap}
+    .navlinks{display:flex;gap:18px;align-items:center;flex-wrap:wrap}
+    .navlinks a{text-decoration:none;font-size:12px;color:#5d574d}
+    .navlinks a:hover{color:var(--gold-dark)}
+    .music-small{display:none;border:1px solid var(--line);background:#f5efe4;border-radius:50%;width:38px;height:38px;cursor:pointer;color:var(--gold-dark)}
+    .hero{min-height:calc(100vh - 60px);display:grid;place-items:center;padding:45px 20px;background:linear-gradient(90deg,rgba(248,244,236,.97) 0%,rgba(248,244,236,.86) 42%,rgba(248,244,236,.15) 100%),url('https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=1800&q=85') center/cover}
+    .hero-inner{width:min(1100px,100%);margin:auto}
+    .hero-copy{max-width:610px;text-align:center;padding:42px 25px;background:#fffdf8b8;border:1px solid #fff9;border-radius:3px;backdrop-filter:blur(3px)}
+    .eyebrow{letter-spacing:3px;text-transform:uppercase;font-size:10px;color:var(--gold-dark)}
+    h1,h2,h3{font-family:"Cormorant Garamond",Georgia,serif;font-weight:500;line-height:1.12;margin:10px 0}
+    h1{font-size:clamp(38px,6vw,66px);color:#3c352b}
+    h2{font-size:clamp(32px,4vw,44px)}
+    h3{font-size:27px}
+    .amp{font-family:"Cormorant Garamond",Georgia,serif;color:var(--gold);font-size:36px;font-style:italic}
+    .hero-copy p{max-width:440px;margin:18px auto;color:#625b51}
+    .button{display:inline-flex;justify-content:center;align-items:center;gap:8px;padding:12px 24px;border:0;border-radius:30px;background:linear-gradient(135deg,#c5a66c,#8c6a32);color:white;text-decoration:none;font:500 12px Poppins,sans-serif;cursor:pointer;box-shadow:0 5px 14px #7c5e2b24}
+    .button:hover{filter:brightness(1.05);transform:translateY(-1px)}
+    .section{padding:80px 20px}
+    .section-inner{max-width:1000px;margin:auto}
+    .paper{background:var(--paper);border:1px solid var(--line);padding:clamp(24px,5vw,52px);position:relative;overflow:hidden}
+    .center{text-align:center}
+    .ornament{color:var(--gold);letter-spacing:7px;font-size:13px;margin-bottom:8px}
+    .lead{color:var(--muted);max-width:620px;margin:14px auto 28px}
+    .couple-grid{display:grid;grid-template-columns:1fr 70px 1fr;align-items:center;gap:20px;margin-top:35px}
+    .person img{width:min(230px,100%);aspect-ratio:1/1;object-fit:cover;border-radius:50%;border:5px solid #f4ead8;padding:4px}
+    .person p{color:var(--muted);font-size:12px}
+    .heart{font-size:28px;color:var(--gold)}
+    .story{max-width:690px;margin:30px auto 0;color:#655d52}
+    .countdown{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;max-width:620px;margin:30px auto}
+    .timebox{padding:18px 8px;background:#f6efe3;border:1px solid #e9dcc5;border-radius:12px}
+    .timebox strong{display:block;font-size:clamp(24px,4vw,36px);font-weight:500;color:#57452a;line-height:1.3}
+    .timebox span{font-size:11px;color:var(--muted)}
+    .event-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:32px}
+    .event{border:1px solid var(--line);padding:28px 18px;background:#fffefa}
+    .event .symbol{font-size:24px;color:var(--gold)}
+    .event p{margin:8px 0;color:#6c655b}
+    .map-frame{width:100%;height:300px;border:0;border-radius:3px;background:#eee}
+    .gallery{display:grid;grid-template-columns:repeat(3,1fr);gap:12px;margin-top:30px}
+    .gallery img{width:100%;height:230px;object-fit:cover;border-radius:3px;transition:transform .25s}
+    .gallery img:hover{transform:scale(1.02)}
+    .rsvp-card{max-width:660px;margin:28px auto 0;padding:30px;background:#f8f2e7;border:1px solid var(--line)}
+    label{display:block;text-align:left;font-size:12px;margin:12px 0 5px;color:#62594c}
+    input,select,textarea{width:100%;padding:12px;border:1px solid #dfd2bd;background:#fffdf9;border-radius:5px;font:13px Poppins,sans-serif;color:var(--ink)}
+    textarea{min-height:85px;resize:vertical}
+    .rsvp-form .button{width:100%;margin-top:18px}
+    .music-bar{display:none!important;max-width:1000px;margin:0 auto 25px;padding:14px 18px;align-items:center;gap:12px;background:#292b29;color:#fff;border-radius:7px}
+    .music-icon{font-size:22px;color:#d7b77a}
+    .music-info{flex:1}.music-info strong{display:block;font-size:12px;font-weight:500}.music-info small{font-size:10px;color:#c5c0b6}
+    .music-bar button{background:#d5b577;color:#2e2b25;border:0;border-radius:50%;width:36px;height:36px;cursor:pointer}
+    footer{text-align:center;padding:45px 20px;background:#f0e8da;border-top:1px solid var(--line)}
+    footer .script{font-size:30px}
+    .small{font-size:11px;color:var(--muted)}
+    .hidden{display:none!important}
+    @media(max-width:700px){
+      .nav{padding:10px 14px}.brand{font-size:23px}.navlinks{gap:10px}.navlinks a{font-size:10px}
+      .navlinks a:nth-child(2),.navlinks a:nth-child(4){display:none}
+      .hero{min-height:82vh;padding:24px 14px;background-position:58% center}
+      .hero-copy{padding:34px 17px;background:#fffdf8e8}
+      .section{padding:52px 14px}.couple-grid{grid-template-columns:1fr;gap:12px}.heart{line-height:1}
+      .person img{width:170px}.event-grid{grid-template-columns:1fr}.gallery{grid-template-columns:repeat(2,1fr);gap:8px}.gallery img{height:170px}
+      .countdown{gap:6px}.timebox{padding:14px 3px}.map-frame{height:260px}
+    }
+  </style>
+</head>
+<body>
+  <header class="topbar">
+    <nav class="nav" aria-label="Navigasi utama">
+      <a class="brand" href="#home" style="text-decoration:none">Paisal & Ajeng</a>
+      <div class="navlinks">
+        <a href="#home">Home</a><a href="#kami">Tentang Kami</a><a href="#acara">Acara</a><a href="#galeri">Galeri</a><a href="#lokasi">Lokasi</a><a href="#rsvp">RSVP</a>
+        <button class="music-small" id="musicToggleTop" aria-label="Putar atau jeda musik">♫</button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-inner">
+        <div class="hero-copy">
+          <div class="eyebrow">Undangan Pernikahan</div>
+          <p class="script" style="font-size:25px;margin-bottom:0">The Wedding Of</p>
+          <h1>Paisal Ardiansah<br><span class="amp">&</span><br>Ajeng Regita Mutiara Nandayani</h1>
+          <p>Dengan penuh cinta, kami mengundang Anda untuk hadir dan berbagi kebahagiaan di hari istimewa kami.</p>
+          <p class="script" style="font-size:25px">10 Februari 2027</p>
+          <a class="button" id="bukaUndangan" href="#kami">♡ &nbsp; Buka Undangan</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="kami">
+      <div class="section-inner paper center">
+        <div class="ornament">✦ ❧ ✦</div>
+        <h2>Tentang Kami</h2>
+        <p class="lead">Dengan memohon rahmat dan ridho Tuhan Yang Maha Esa, kami bermaksud menyelenggarakan pernikahan kami.</p>
+        <div class="couple-grid">
+          <div class="person">
+            <img src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=600&q=85" alt="Foto mempelai pria">
+            <h3>Paisal Ardiansah</h3>
+            <p>Putra dari Bapak [Nama Ayah] dan Ibu [Nama Ibu]</p>
+          </div>
+          <div class="heart">♥</div>
+          <div class="person">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=600&q=85" alt="Foto mempelai wanita">
+            <h3>Ajeng Regita Mutiara Nandayani</h3>
+            <p>Putri dari Bapak [Nama Ayah] dan Ibu [Nama Ibu]</p>
+          </div>
+        </div>
+        <p class="story">Kami percaya setiap pertemuan memiliki cerita. Dengan penuh rasa syukur, kami ingin memulai perjalanan baru bersama dan merayakannya dengan keluarga serta sahabat terkasih.</p>
+      </div>
+    </section>
+
+    <section class="section" id="acara" style="padding-top:0">
+      <div class="section-inner paper center">
+        <div class="ornament">✦ ❧ ✦</div>
+        <h2>Hitung Mundur</h2>
+        <p class="lead">Menuju hari bahagia kami</p>
+        <div class="countdown" aria-label="Hitung mundur pernikahan">
+          <div class="timebox"><strong id="days">000</strong><span>Hari</span></div>
+          <div class="timebox"><strong id="hours">00</strong><span>Jam</span></div>
+          <div class="timebox"><strong id="minutes">00</strong><span>Menit</span></div>
+          <div class="timebox"><strong id="seconds">00</strong><span>Detik</span></div>
+        </div>
+        <div class="event-grid">
+          <article class="event">
+            <div class="symbol">❦</div><h3>Akad Nikah</h3>
+            <p>Rabu, 10 Februari 2027</p><p><strong>08.00 WIB</strong></p><p>📍 Cibolang</p>
+          </article>
+          <article class="event">
+            <div class="symbol">✧</div><h3>Resepsi</h3>
+            <p>Rabu, 10 Februari 2027</p><p><strong>09.00–10.00 WIB</strong></p><p>📍 Cibolang</p>
+          </article>
+        </div>
+        <p class="small" style="margin-top:24px">Mohon periksa kembali alamat lengkap dan waktu acara sebelum undangan dibagikan.</p>
+      </div>
+    </section>
+
+    <section class="section" id="lokasi" style="padding-top:0">
+      <div class="section-inner paper center">
+        <div class="ornament">✦ ❧ ✦</div><h2>Lokasi Acara</h2>
+        <p class="lead">Cibolang</p>
+        <iframe class="map-frame" title="Peta Cibolang" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://maps.google.com/maps?q=Cibolang%2C%20Indonesia&t=&z=13&ie=UTF8&iwloc=&output=embed"></iframe>
+        <p style="margin-top:22px"><a class="button" href="https://www.google.com/maps/search/?api=1&query=Cibolang" target="_blank" rel="noopener">⌖ &nbsp; Buka di Google Maps</a></p>
+        <p class="small">Lokasi “Cibolang” masih umum. Edit tautan peta di file index.html dengan alamat atau pin lokasi acara yang tepat.</p>
+      </div>
+    </section>
+
+    <section class="section" id="galeri" style="padding-top:0">
+      <div class="section-inner paper center">
+        <div class="ornament">✦ ❧ ✦</div><h2>Galeri Kami</h2>
+        <p class="lead">Beberapa momen indah dalam perjalanan kami.</p>
+        <div class="gallery">
+          <img src="https://images.unsplash.com/photo-1519741497674-611481863552?auto=format&fit=crop&w=700&q=80" alt="Dekorasi pernikahan">
+          <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b?auto=format&fit=crop&w=700&q=80" alt="Momen pernikahan">
+          <img src="https://images.unsplash.com/photo-1511285560929-80b456fea0bc?auto=format&fit=crop&w=700&q=80" alt="Pasangan pengantin">
+          <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e?auto=format&fit=crop&w=700&q=80" alt="Bunga pernikahan">
+          <img src="https://images.unsplash.com/photo-1465495976277-4387d4b0e4a6?auto=format&fit=crop&w=700&q=80" alt="Dekorasi bunga">
+          <img src="https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=700&q=80" alt="Detail hari pernikahan" onerror="this.src='https://images.unsplash.com/photo-1519225421980-715cb0215aed?auto=format&fit=crop&w=700&q=80'">
+        </div>
+        <p class="small">Foto di atas adalah foto contoh dari internet. Ganti dengan foto asli Paisal dan Ajeng agar undangan lebih personal.</p>
+      </div>
+    </section>
+
+    <section class="section" id="rsvp" style="padding-top:0">
+      <div class="section-inner paper center">
+        <div class="ornament">✦ ❧ ✦</div><h2>Konfirmasi Kehadiran</h2>
+        <p class="lead">Mohon konfirmasi kehadiran Anda melalui WhatsApp.</p>
+        <div class="rsvp-card">
+          <form class="rsvp-form" id="rsvpForm">
+            <label for="guestName">Nama tamu</label><input id="guestName" name="guestName" placeholder="Masukkan nama Anda" required>
+            <label for="attendance">Konfirmasi kehadiran</label>
+            <select id="attendance" name="attendance" required><option value="">Pilih jawaban</option><option>Insyaallah hadir</option><option>Maaf, belum bisa hadir</option></select>
+            <label for="guestCount">Jumlah tamu</label><select id="guestCount" name="guestCount"><option>1 orang</option><option>2 orang</option><option>3 orang</option><option>4 orang</option></select>
+            <label for="message">Ucapan (opsional)</label><textarea id="message" name="message" placeholder="Tuliskan doa dan ucapan untuk kami"></textarea>
+            <button class="button" type="submit">☏ &nbsp; Konfirmasi via WhatsApp</button>
+          </form>
+        </div>
+        <p style="margin-top:28px">Merupakan suatu kehormatan dan kebahagiaan bagi kami apabila Anda berkenan hadir.</p>
+        <p class="script" style="font-size:28px">Paisal & Ajeng</p>
+      </div>
+    </section>
+  </main>
+
+  <div class="music-bar" style="margin-left:20px;margin-right:20px">
+    <div class="music-icon">♫</div><div class="music-info"><strong>Musik Undangan</strong><small id="musicStatus">Tambahkan file musik.mp3 milik Anda untuk mengaktifkan musik</small></div>
+    <button id="musicToggle" aria-label="Putar atau jeda musik">▶</button>
+    <audio id="weddingMusic" loop preload="none"><source src="musik.mp3" type="audio/mpeg"></audio>
+  </div>
+
+  <footer>
+    <div class="script">Paisal & Ajeng</div>
+    <div class="ornament">✦ ♥ ✦</div>
+    <p class="small">Terima kasih atas doa dan restu Anda.</p>
+    <p class="small">© 2027 — Undangan Pernikahan Paisal & Ajeng</p>
+  </footer>
+
+  <script>
+    // Hitung mundur menuju akad: 10 Februari 2027 pukul 08.00 WIB (UTC+7).
+    const targetDate = new Date('2027-02-10T08:00:00+07:00').getTime();
+    function updateCountdown(){
+      const diff = targetDate - Date.now();
+      if(diff <= 0){
+        ['days','hours','minutes','seconds'].forEach(id => document.getElementById(id).textContent = '00');
+        return;
+      }
+      document.getElementById('days').textContent = Math.floor(diff / 86400000);
+      document.getElementById('hours').textContent = String(Math.floor((diff % 86400000) / 3600000)).padStart(2,'0');
+      document.getElementById('minutes').textContent = String(Math.floor((diff % 3600000) / 60000)).padStart(2,'0');
+      document.getElementById('seconds').textContent = String(Math.floor((diff % 60000) / 1000)).padStart(2,'0');
+    }
+    updateCountdown(); setInterval(updateCountdown,1000);
+
+    // Nomor WhatsApp tujuan dalam format internasional tanpa tanda +.
+    const whatsappNumber = '6285156085657';
+    document.getElementById('rsvpForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      const name = document.getElementById('guestName').value.trim();
+      const attendance = document.getElementById('attendance').value;
+      const count = document.getElementById('guestCount').value;
+      const message = document.getElementById('message').value.trim();
+      const text = `Assalamu'alaikum, saya ${name}. Konfirmasi undangan pernikahan Paisal & Ajeng: ${attendance}. Jumlah tamu: ${count}.${message ? '\nUcapan: ' + message : ''}`;
+      window.open(`https://wa.me/${whatsappNumber}?text=${encodeURIComponent(text)}`, '_blank', 'noopener');
+    });
+
+    const music = document.getElementById('weddingMusic');
+    // Putar musik setelah pengunjung menekan tombol Buka Undangan.
+    const openInvitationButton = document.getElementById('bukaUndangan');
+    if (openInvitationButton) {
+      openInvitationButton.addEventListener('click', async function(){
+        try {
+          await music.play();
+          status.textContent = 'Musik sedang diputar';
+          musicButtons[0].textContent = 'Ⅱ';
+        } catch (error) {
+          status.textContent = 'Musik belum dapat diputar. Periksa file musik.mp3.';
+          console.log('Musik belum dapat diputar:', error);
+        }
+      });
+    }
+
+    const status = document.getElementById('musicStatus');
+    const musicButtons = [document.getElementById('musicToggle'), document.getElementById('musicToggleTop')];
+    async function toggleMusic(){
+      if(music.paused){
+        try{await music.play();status.textContent='Musik sedang diputar';musicButtons[0].textContent='Ⅱ';}
+        catch(err){status.textContent='Unggah file musik.mp3 ke repository terlebih dahulu';alert('Tambahkan file musik.mp3 ke repository GitHub agar musik dapat diputar.');}
+      }else{music.pause();musicButtons[0].textContent='▶';status.textContent='Musik dijeda';}
+    }
+    musicButtons.forEach(btn => btn.addEventListener('click',toggleMusic));
+  </script>
+</body>
+</html>
